@@ -11,17 +11,5 @@ App.reopen({
 
         this._super();
 
-        console.log('initializing ...');
-
-        var dude = App.Models.MyModel.create({
-            firstName: 'Bob',
-            lastName: 'Marley',
-            lyrics: 'No Woman, No Cry!'
-        });
-
-        App.myController.set('theMan', dude);
-
-    },
-
-    myController: App.Controllers.MyController.create()
+    }
 });
