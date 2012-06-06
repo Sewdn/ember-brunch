@@ -6,6 +6,11 @@ This is a simple ember skeleton for [Brunch](http://brunch.io/).
 Clone the repo and run `npm install` & `brunch build`.
 See more info on the [official site](http://brunch.io)
 
+## Usage
+
+    git clone git://github.com/icholy/ember-brunch.git -b coffee
+    brunch new myapp -s ./ember-brunch/
+
 ## Overview
 
     config.coffee
