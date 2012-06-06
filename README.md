@@ -16,8 +16,6 @@ See more info on the [official site](http://brunch.io)
       assets/
         index.html
         img/
-          glyphicons-halflings-white.png
-          glyphicons-halflings.png
       styles/
       templates/
       models/
@@ -35,9 +33,7 @@ See more info on the [official site](http://brunch.io)
         console-helper.js
         ember-latest.js
         handlebars-1.0.0.beta.6.js
-        bootstrap.js
       styles/
-        bootstrap.css
     /public/
       img/
       stylesheets/
