@@ -23,12 +23,12 @@ See more info on the [official site](http://brunch.io)
       models/
       views/
       controllers/
-      templates.js
-      models.js
-      views.js
-      controllers.js
-      app.js
-      initialize.js
+      templates.coffee
+      models.coffee
+      views.coffee
+      controllers.coffee
+      app.coffee
+      initialize.coffee
     /vendor/
       scripts/
         jquery.js
@@ -45,9 +45,9 @@ See more info on the [official site](http://brunch.io)
     /test/
       spec.coffee
     /generators/
-      model.js
-      view.js
-      controller.js
+      model.coffee
+      view.coffee
+      controller.coffee
 
 * `config.coffee` contains your app configuration. This is where you configure what Plugins / Languages to use and what rules are applied to them.
 * `app/` and subdirectories (excluding `app/assets`) contains files that are to be compiled. Javascript files, or files that compile to JS (coffeescript, roy etc.), are automatically wrapped as commonjs style modules so they can be loaded via `require('module/location')`.

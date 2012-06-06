@@ -5,9 +5,9 @@ path = require 'path'
 
 exports.config = 
 
-  files: 
-    javascripts: 
-      defaultExtension: 'js',
+  files:
+    javascripts:
+      defaultExtension: 'coffee',
       joinTo: 
         'javascripts/app.js': /^app/
         'javascripts/vendor.js': /^vendor/
@@ -33,8 +33,8 @@ exports.config =
 
   generators:
     model: (name)->
-      fs.readFileSync(path.join(__dirname, 'generators', 'model.js')).toString().replace("\#{name}", name)
+      fs.readFileSync(path.join(__dirname, 'generators', 'model.coffee')).toString().replace("\#{name}", name)
     view: (name)->
-      fs.readFileSync(path.join(__dirname, 'generators', 'view.js')).toString().replace("\#{name}", name)
+      fs.readFileSync(path.join(__dirname, 'generators', 'view.coffee')).toString().replace("\#{name}", name)
     controller: (name)->
-      fs.readFileSync(path.join(__dirname, 'generators', 'controller.js')).toString().replace("\#{name}", name)
+      fs.readFileSync(path.join(__dirname, 'generators', 'controller.coffee')).toString().replace("\#{name}", name)
