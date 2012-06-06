@@ -57,7 +57,7 @@ See more info on the [official site](http://brunch.io)
 * `config.coffee` contains your app configuration. This is where you configure what Plugins / Languages to use and what rules are applied to them.
 * `app/` and subdirectories (excluding `app/assets`) contains files that are to be compiled. Javascript files, or files that compile to JS (coffeescript, roy etc.), are automatically wrapped as commonjs style modules so they can be loaded via `require('module/location')`.
 * `app/assets` contains images / static files. The contents of the directory are copied to `public/` without any modification.
-* `app/templates.js`, `app/models.js`, `app/views.js`, and `app/controllers.js` are loaded in `initialize.js` and are responsible for loading their respective classes.
+* `app/templates.coffee`, `app/models.coffee`, `app/views.coffee`, and `app/controllers.coffee` are loaded in `initialize.coffee` and are responsible for loading their respective classes.
 * `test/` contains unit tests.
 * `vendor/` contains all third-party code. The code wouldn’t be wrapped in
 modules, it would be loaded instantly instead.
