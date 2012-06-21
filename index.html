@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Ember-brunch : updated ember skeleton that works with the newer version of brunch" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Ember-brunch</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/icholy/ember-brunch">View on GitHub</a>
+
+          <h1 id="project_title">Ember-brunch</h1>
+          <h2 id="project_tagline">updated ember skeleton that works with the newer version of brunch</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/icholy/ember-brunch/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/icholy/ember-brunch/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Brunch with Ember</h1>
+
+<p>This is a simple ember skeleton for <a href="http://brunch.io/">Brunch</a> with working and up to date handlebars pre-compilng :)</p>
+
+<h2>Getting started</h2>
+
+<p>Clone the repo and run <code>npm install</code> &amp; <code>brunch build</code>.
+See more info on the <a href="http://brunch.io">official site</a></p>
+
+<h2>Versions (branches)</h2>
+
+<ul>
+<li>
+<code>master</code> contains some demo code to give an understanding of how things should work</li>
+<li>
+<code>empty</code> is a clean version of the skeleton with no examples</li>
+<li>
+<code>no-bootstrap</code> this is the same as <code>empty</code> but with bootstrap removed</li>
+<li>
+<code>coffee</code> is the same as <code>empty</code> but uses coffeescript</li>
+</ul><h2>Usage</h2>
+
+<pre><code>brunch new myapp -s git://github.com/icholy/ember-brunch.git
+</code></pre>
+
+<p>if you wanted to use the <code>empty</code> skeleton branch</p>
+
+<pre><code>git clone git://github.com/icholy/ember-brunch.git -b empty
+brunch new myapp -s ./ember-brunch/
+</code></pre>
+
+<p>Once the project has been created, you can start a server by running</p>
+
+<pre><code>brunch watch --server
+</code></pre>
+
+<p>then visit <code>localhost:3333</code></p>
+
+<h2>Overview</h2>
+
+<pre><code>config.coffee
+server.coffee
+package.json
+README.md
+/app/
+  assets/
+    index.html
+    img/
+      glyphicons-halflings-white.png
+      glyphicons-halflings.png
+  styles/
+  templates/
+  models/
+  views/
+  controllers/
+  templates.js
+  models.js
+  views.js
+  controllers.js
+  app.js
+  initialize.js
+/vendor/
+  scripts/
+    jquery.js
+    console-helper.js
+    ember-latest.js
+    ember-data-latest.js
+    handlebars-1.0.0.beta.6.js
+    bootstrap.js
+  styles/
+    bootstrap.css
+/public/
+  img/
+  stylesheets/
+  javascripts/
+/test/
+  spec.coffee
+/generators/
+  model.js
+  view.js
+  controller.js
+</code></pre>
+
+<ul>
+<li>
+<code>config.coffee</code> contains your app configuration. This is where you configure what Plugins / Languages to use and what rules are applied to them.</li>
+<li>
+<code>app/</code> and subdirectories (excluding <code>app/assets</code>) contains files that are to be compiled. Javascript files, or files that compile to JS (coffeescript, roy etc.), are automatically wrapped as commonjs style modules so they can be loaded via <code>require('module/location')</code>.</li>
+<li>
+<code>app/assets</code> contains images / static files. The contents of the directory are copied to <code>public/</code> without any modification.</li>
+<li>
+<code>app/templates.js</code>, <code>app/models.js</code>, <code>app/views.js</code>, and <code>app/controllers.js</code> are loaded in <code>initialize.js</code> and are responsible for loading their respective classes.</li>
+<li>
+<code>test/</code> contains unit tests.</li>
+<li>
+<code>vendor/</code> contains all third-party code. The code wouldn’t be wrapped in
+modules, it would be loaded instantly instead.</li>
+</ul><p>The generated output is placed in the <code>public/</code> (by default) directory when <code>brunch build</code> or <code>brunch watch</code> is executed.</p>
+
+<h2>Other</h2>
+
+<p>Software Versions used:</p>
+
+<ul>
+<li>jQuery 1.7.2</li>
+<li>Ember latest (master)</li>
+<li>Bootstrap 2.0.4</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Ember-brunch maintained by <a href="https://github.com/icholy">icholy</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
